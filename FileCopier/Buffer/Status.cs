@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace FileCopier
 {
-    enum TextBoxType
+    enum Status
     {
-        Source,
-        Destination
+        Empty,
+        Checked,
+        New
     }
 }

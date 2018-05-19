@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace FileCopier
 {
-    enum BufferStatus
+    struct TextLine
     {
-        Empty,
-        Checked,
-        New
+        public string Line;     // Is null by default.
+        public Status Status;   // Is Status.Empty by default.
     }
 }
