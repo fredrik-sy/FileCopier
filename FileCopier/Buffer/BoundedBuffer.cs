@@ -96,7 +96,7 @@ namespace FileCopier
                     line = ReplaceAt(line, index, oldValue.Length, newValue);
                 }
 
-                rtxSourcePos += buffer[modifyPos].Line.Length + 1;                              // Prepare the rtxSourcePos to next read line.
+                rtxSourcePos += buffer[modifyPos].Line.Length + 1;                              // Prepare the rtxSourcePos to the next read line.
                 buffer[modifyPos].Line = line;
                 rtxDestinationPos += buffer[modifyPos].Line.Length + 1;
             }
